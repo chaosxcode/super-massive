@@ -24,6 +24,10 @@ Also live across Stake's platforms — **stake.com · stake.us · stake.eu · st
 
 It's a **social-casino** title — play is in Stake Cash / Gold Coins (`SC` / `GC`), no real-money wagering.
 
+## Gameplay
+
+![Super Massive — symbols pulled into the black hole, the WILD vortex, and the astronaut-cat mascot](assets/screenshot.png)
+
 ## Game facts
 
 | | |
