@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="%sveltekit.assets%/favicon.svg" />
+		<!-- font is self-hosted (see +layout.svelte FontFace loader) — Stake forbids
+			external font/CDN loads, so NO external <link> stylesheets here -->
+		<!-- Deliberately scale-permissive: no scale-locking directives are added here,
+			because those also kill PINCH zoom (an accessibility regression, and modern
+			iOS Safari ignores them anyway). Double-tap zoom is disabled by the
+			touch-action on <body> below instead. -->
+		<meta name="viewport" content="width=device-width" />
+		%sveltekit.head%
+	</head>
+	<!-- touch-action: manipulation — Stake review: no double-tap-to-zoom on mobile.
+		touch-action composes by intersection up the ancestor chain, so declaring it
+		once on <body> covers the pixi canvas, the DOM HUD bar and every modal, from
+		first paint. 'manipulation' == 'auto' minus double-tap-zoom: panning (modal
+		vertical scroll, the bonus-card drag list) and pinch-zoom both still work. -->
+	<!-- The main frame must NEVER scroll (Stake rule). `overflow: hidden` on <body>
+	     alone is not enough — the document element still scrolls, and at Popout S
+	     (400x225) the mascot's absolutely-positioned reflection hangs below the
+	     viewport and produced 4px of document scroll. Measured; not theoretical. -->
+	<style>
+		html,
+		body {
+			height: 100%;
+			max-height: 100%;
+			overflow: hidden;
+			overscroll-behavior: none;
+			/* owner reported double-tap zoom STILL firing on a phone: body carried
+			   touch-action but taps that resolve against the root element did not.
+			   State it on BOTH. */
+			touch-action: manipulation;
+		}
+	</style>
+	<body
+		style="
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: black;
+			touch-action: manipulation;
+		"
+	>
+		<div>%sveltekit.body%</div>
+	</body>
+</html>

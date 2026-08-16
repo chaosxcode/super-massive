@@ -1,0 +1,202 @@
+{
+ "src": [
+  "./assets/audio/sounds.ogg?v=8",
+  "./assets/audio/sounds.mp3?v=8"
+ ],
+ "sprite": {
+  "sfx_spin_click": [
+   0.0,
+   482.653061
+  ],
+  "sfx_symbol_land": [
+   783.673469,
+   602.653061
+  ],
+  "sfx_cluster_pop": [
+   1697.959184,
+   802.653061
+  ],
+  "sfx_glass_shatter": [
+   2821.22449,
+   1200.068027
+  ],
+  "sfx_tide_surge": [
+   4336.326531,
+   1798.571429
+  ],
+  "sfx_bell_toll": [
+   6452.244898,
+   3000.068027
+  ],
+  "sfx_badge_pop": [
+   9769.795918,
+   602.653061
+  ],
+  "sfx_badge_tick": [
+   10684.081633,
+   492.018141
+  ],
+  "sfx_water_drain": [
+   11493.877551,
+   1480.0
+  ],
+  "sfx_gondola_creak": [
+   13296.326531,
+   1178.639456
+  ],
+  "sfx_scatter_chime": [
+   14785.306122,
+   1480.068027
+  ],
+  "sfx_anticipation_rumble": [
+   16587.755102,
+   2480.068027
+  ],
+  "sfx_bonus_thunderclap": [
+   19382.857143,
+   2480.068027
+  ],
+  "sfx_retrigger_peal": [
+   22177.959184,
+   2480.068027
+  ],
+  "sfx_bigwin_sting": [
+   24973.061224,
+   3000.068027
+  ],
+  "sfx_maxwin_sting": [
+   28290.612245,
+   4000.068027
+  ],
+  "sfx_win_tally_loop": [
+   32600.816327,
+   3000.0,
+   true
+  ],
+  "sfx_ui_click": [
+   35918.367347,
+   375.53288
+  ],
+  "sfx_buy_confirm": [
+   36597.55102,
+   820.249433
+  ],
+  "sfx_poseidon_grunt": [
+   37720.816327,
+   880.0
+  ],
+  "sfx_poseidon_yell": [
+   38922.44898,
+   1280.0
+  ],
+  "sfx_poseidon_laugh": [
+   40515.918367,
+   1365.442177
+  ],
+  "sfx_trident_swoosh": [
+   42187.755102,
+   600.0
+  ],
+  "sfx_cat_trill": [
+   43102.040816,
+   3000.0
+  ],
+  "sfx_cat_annoyed": [
+   46419.591837,
+   3000.0
+  ],
+  "sfx_cat_yowl": [
+   49737.142857,
+   3000.0
+  ],
+  "sfx_cat_purr": [
+   53054.693878,
+   3000.0
+  ],
+  "sfx_horizon_dive": [
+   56372.244898,
+   5000.0
+  ],
+  "bgm_main": [
+   61675.102041,
+   89963.99093,
+   true
+  ],
+  "bgm_bonus": [
+   151954.285714,
+   74969.002268,
+   true
+  ]
+ },
+ "config": {
+  "sfx_spin_click": {
+   "volume": 0.0
+  },
+  "sfx_symbol_land": {
+   "volume": 0.6
+  },
+  "sfx_cluster_pop": {
+   "volume": 0.8
+  },
+  "sfx_glass_shatter": {
+   "volume": 0.8
+  },
+  "sfx_tide_surge": {
+   "volume": 0.9
+  },
+  "sfx_bell_toll": {
+   "volume": 0.95
+  },
+  "sfx_badge_pop": {
+   "volume": 0.7
+  },
+  "sfx_badge_tick": {
+   "volume": 0.62
+  },
+  "sfx_water_drain": {
+   "volume": 0.72
+  },
+  "sfx_gondola_creak": {
+   "volume": 0.72
+  },
+  "sfx_scatter_chime": {
+   "volume": 0.92
+  },
+  "sfx_anticipation_rumble": {
+   "volume": 0.85
+  },
+  "sfx_bonus_thunderclap": {
+   "volume": 1.0
+  },
+  "sfx_retrigger_peal": {
+   "volume": 0.92
+  },
+  "sfx_bigwin_sting": {
+   "volume": 1.0
+  },
+  "sfx_maxwin_sting": {
+   "volume": 1.0
+  },
+  "sfx_win_tally_loop": {
+   "volume": 0.8
+  },
+  "sfx_ui_click": {
+   "volume": 0.55
+  },
+  "sfx_buy_confirm": {
+   "volume": 0.85
+  },
+  "sfx_poseidon_grunt": {
+   "volume": 0.95
+  },
+  "sfx_poseidon_yell": {
+   "volume": 0.95
+  },
+  "sfx_poseidon_laugh": {
+   "volume": 0.92
+  },
+  "sfx_trident_swoosh": {
+   "volume": 0.78
+  }
+ }
+}

@@ -1,0 +1,26 @@
+import { stateI18nDerived } from 'state-shared';
+
+export const i18nDerived = {
+	audio: () => stateI18nDerived.translate('AUDIO'),
+	balance: () => stateI18nDerived.translate('BALANCE'),
+	win: () => stateI18nDerived.translate('WIN'),
+	// social-casino compliant terms, ALWAYS (this is a GC-only social title — never
+	// show the prohibited "BET"/"BUY" wording even if the social URL param is absent)
+	bet: () => 'PLAY',
+	stop: () => stateI18nDerived.translate('STOP'),
+	buyBonus: () => 'GET BONUS', // official social swap is "buy bonus"→"get bonus" (longest-first)
+	disable: () => stateI18nDerived.translate('DISABLE'),
+	freeSpins: () => stateI18nDerived.translate('FREE SPINS'),
+	//
+	decrease: () => stateI18nDerived.translate('-'),
+	increase: () => stateI18nDerived.translate('+'),
+	menu: () => stateI18nDerived.translate('MENU'),
+	turbo: () => stateI18nDerived.translate('TURBO'),
+	autoSpin: () => stateI18nDerived.translate('AUTO SPIN'),
+	payTable: () => 'WIN TABLE', // social swap: "paytable"→"win table" (restricted word); button is icon-only so this label is a safe default
+	info: () => stateI18nDerived.translate('INFO'),
+	settings: () => stateI18nDerived.translate('SETTINGS'),
+	soundOn: () => stateI18nDerived.translate('SOUND ON'),
+	soundOff: () => stateI18nDerived.translate('SOUND OFF'),
+	menuExit: () => stateI18nDerived.translate('EXIT'),
+};
